@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+    @apply navbar  lg:h-[230px] flex items-start pt-10 bg-no-repeat lg:bg-[position:top_right,_bottom_left] bg-[url('resources/Images/Vector-1.png'),_url('resources/Images/Vector.png')] 
+}
