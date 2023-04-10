@@ -11,7 +11,7 @@ const Home = () => {
                     One step <br /> closer to your <br /><span className='gradient-text'>Drem Job</span>
                     </h1>
                     <p className="tracking-wide font-light text-lg">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-                    <button className="my-btn w-1/2">Get started</button>
+                    <a className="my-btn w-1/2" href='#jobs'>Get started</a>
                 </div>
                 <img src="resources/Images/banner-person.png" alt="" />
             </div>

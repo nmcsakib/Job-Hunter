@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Components/Home'
 import JobsDetailsPage from './Components/JobsDetailsPage'
 import ErrorPage from './Components/ErrorPage'
+import AppliedJobs from './Components/AppliedJobs'
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/:id',
         element: <JobsDetailsPage />
+      },
+      {
+        path: '/appliedJobs',
+        element: <AppliedJobs />
       },
     ]
   }

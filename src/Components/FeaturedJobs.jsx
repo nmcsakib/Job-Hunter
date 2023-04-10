@@ -13,7 +13,7 @@ const FeaturedJobs = () => {
     }
     
     return (
-        <div className=' my-10 flex flex-col items-center' >
+        <div className=' my-10 flex flex-col items-center' id="jobs" >
              <div className="text-center">
             <h1 className="font-bold text-5xl my-5">Featured Job</h1>
             <p className='tracking-wide font-light text-lg'>Explore thousands of job opportunities with all the information you need. Its your future</p>   
