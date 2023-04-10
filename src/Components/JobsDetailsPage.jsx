@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { JobsContext } from '../App';
 import { addToDb } from '../Utilities/fakeDB';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const JobsDetailsPage = () => {
     const {JobsDetails} = useContext(JobsContext)
     const loc = useLocation()
@@ -12,7 +13,17 @@ const JobsDetailsPage = () => {
     const jobExists = JobsDetails.find(
         jobData => jobData.id === state
     )
-    const {description, id, jobTitle, logo, salary, address, responsibilities, experience, educationalRequirements, email, phone} = jobExists;
+    const { description, id, jobTitle, logo, salary, address, responsibilities, experience, educationalRequirements, email, phone } = jobExists;
+    let count = 0;
+    const handelFunc = (id) => {
+        count = 1;
+        addToDb(id)
+        if (count <= 1) {
+            toast("Applied Successfully");
+        } else {
+            toast("Already added !!");
+        }
+    }
     return (
         <div className='grid grid-cols-6 gap-8 px-16 my-10'>
             <div className='col-span-4 space-y-4'>
@@ -39,7 +50,7 @@ const JobsDetailsPage = () => {
                   
                 </div>
                 <div className="mt-5">
-      <button onClick={() => addToDb(id)} className="my-btn w-full">Apply Now</button>
+      <button onClick={() => handelFunc(id)} className="my-btn w-full">Apply Now</button>
     </div>
             </div>
         </div>

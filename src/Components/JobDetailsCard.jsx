@@ -3,12 +3,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faDollar } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+
+import VanillaTilt from 'vanilla-tilt';
 // import { JobsIdContext } from '../main';
 const JobDetailsCard = ({ jobDetail }) => {
     const { logo, jobTitle, jobType, isFullTime, Company, address, salary, id } = jobDetail;
 //    const handelJobsData = useContext(JobsIdContext)
     return (
-        <div className="card w-96 bg-[#dddddd]/30 rounded-none border">
+        <div
+        ref={el => {
+            if (el) VanillaTilt.init(el, {
+                max: 15, 
+                speed: 500, 
+                reset: true,
+                axis: 'x',
+                reverse: true
+        }); }}
+            className="card w-96 bg-[#dddddd]/30 rounded-none border">
             <img className='p-1 h-16 w-32 ml-10 mt-5 rounded-lg' src={logo} alt="Shoes" />
             <div className="card-body ">
                 <h2 className="card-title">

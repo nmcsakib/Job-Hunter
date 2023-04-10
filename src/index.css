@@ -2,7 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.typed-cursor {
+    color: white;
+}
 .header{
     @apply navbar  lg:h-[230px] flex items-start pt-10 bg-no-repeat lg:bg-[position:top_right,_bottom_left] bg-[url('resources/Images/Vector-1.png'),_url('resources/Images/Vector.png')] 
 }
