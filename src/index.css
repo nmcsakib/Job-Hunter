@@ -10,5 +10,9 @@
     @apply bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent
 }
 .my-btn{
-    @apply btn border-none bg-gradient-to-r from-[#9873FF] to-[#7E90FE] tracking-wide
+    @apply btn border-none bg-gradient-to-r from-[#9873FF] to-[#7E90FE]
+    hover:to-[#9873FF] hover:from-[#7E90FE] tracking-wider
+}
+.my-btn-outline{
+    @apply btn px-4 py-2 border-2 rounded-none
 }

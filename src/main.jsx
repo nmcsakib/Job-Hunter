@@ -8,8 +8,9 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    loader: () => fetch('../resources/jobDetails.json'),
     children: [
-      {path: '/', element: <Home />}
+      { path: '/', element: <Home />, },
     ]
   }
 ])

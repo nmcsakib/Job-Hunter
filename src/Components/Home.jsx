@@ -1,9 +1,10 @@
 import React from 'react';
 import JobCategory from './JobCategory';
+import FeaturedJobs from './FeaturedJobs';
 
 const Home = () => {
     return (
-        <div className='font-manrope'>
+        <div className='font-manrope max-w-[1200px] mx-auto '>
             <div className="banner px-10 mx-auto flex justify-between items-center my-10">
                 <div className="flex flex-col gap-4">
                 <h1 className="font-bold text-7xl leading-tight">
@@ -15,6 +16,7 @@ const Home = () => {
                 <img src="resources/Images/banner-person.png" alt="" />
             </div>
             <JobCategory />
+            <FeaturedJobs />
         </div>
     );
 };
