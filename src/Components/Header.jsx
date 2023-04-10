@@ -22,18 +22,14 @@ const Header = () => {
       </ul>
     </div>
                     <div className="btn btn-ghost normal-case text-xl">
-                        <img className='w-20 md:w-40' src="resources/Images/CareerHub.png" />
+                       <h2 className="text-4xl font-manrope font-bold tracking-widest">Job Hunter</h2>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className=" menu-horizontal px-1 flex gap-6 ">
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/'>Home</NavLink></li>
-      <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/'>Statistic</NavLink></li>
-      <li tabIndex={0} className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'>
-        <a>
-          Applied Jobs
-        </a>
-      </li>
+      <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/statistics'>Statistic</NavLink></li>
+      <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/appliedJobs'>Applied Jobs</NavLink></li>
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><a>Blogs</a></li>
     </ul>
   </div>
