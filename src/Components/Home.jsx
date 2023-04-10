@@ -1,4 +1,5 @@
 import React from 'react';
+import JobCategory from './JobCategory';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
                 </div>
                 <img src="resources/Images/banner-person.png" alt="" />
             </div>
+            <JobCategory />
         </div>
     );
 };

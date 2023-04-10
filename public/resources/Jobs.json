@@ -1,0 +1,24 @@
+ {
+    "categories": [
+        { "id": "01",
+          "logo": "../resources/Icons/social-media1.png",
+          "name": "Technical",
+          "jobsAvailable": "500 jobs"
+        },
+        { "id": "02",
+          "logo": "../resources/Icons/accounts1.png",
+          "name": "Human Resources",
+          "jobsAvailable": "350 jobs"
+        },
+        { "id": "03",
+          "logo": "../resources/Icons/accounts1.png",
+          "name": "Data Analytics",
+          "jobsAvailable": "700 jobs"
+        },
+        { "id": "04",
+          "logo": "../resources/Icons/business1.png",
+          "name": "Marketing",
+          "jobsAvailable": "200 jobs"
+        }
+      ]  
+ }

@@ -7,10 +7,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      manrope: ['Manrope', 'serif']
-    },
-    fontFace: {
-      '@import': "url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@500&display=swap');",
+      manrope: ['Manrope', 'serif'],
     },
   },
   plugins: [require("daisyui")],
