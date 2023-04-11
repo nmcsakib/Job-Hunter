@@ -2,9 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faDollar } from '@fortawesome/free-solid-svg-icons'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 const SingleItem = ({ job }) => {
-    const { state } = useLocation();
     const { logo, id, jobTitle, Company, isFullTime, jobType, salary, address } = job;
     return (
         <div className='flex gap-10 items-center bg-[#dddddd]/30 rounded-none border'>
