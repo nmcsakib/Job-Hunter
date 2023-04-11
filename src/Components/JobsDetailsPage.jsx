@@ -8,8 +8,6 @@ const JobsDetailsPage = () => {
     const {JobsDetails} = useContext(JobsContext)
     const loc = useLocation()
     const { state } = loc;
-    // console.log(state);
-    // console.log(JobsDetails);
     const jobExists = JobsDetails.find(
         jobData => jobData.id === state
     )
@@ -37,11 +35,11 @@ const JobsDetailsPage = () => {
             <div className="card bg-[#7E90FE]/20 rounded-none text-gray-800">
   <div className="card-body">
                         <h2 className="card-title">Job Details</h2>
-                        <hr />
+                        <hr className='bg-gray-400 h-[2px]' />
                         <p className='font-medium'>Salary: {salary.replace('per year', ' ')}</p>
                         <p className='font-medium'>Job: {jobTitle}</p>
                         <h2 className="card-title">Contact</h2>
-                        <hr />
+                        <hr className='bg-gray-400 h-[2px]' />
                         <p className='font-medium'>Phone: {phone}</p>
                         <p className='font-medium'>Email: {email}</p>
                         <p className='font-medium'>Address: {address}</p>

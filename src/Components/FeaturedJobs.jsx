@@ -24,7 +24,7 @@ const FeaturedJobs = () => {
                     
                 }
             </div>
-            <button onClick={handelAllJobs} className={jobs.length>4 ? `hidden` : `block my-btn w-1/4 `}>See All Jobs</button>
+            <button onClick={handelAllJobs} className={jobs.length>4 ? `hidden` : `block my-btn w-1/2 md:w-1/4 `}>See All Jobs</button>
         </div>
     );
 };
