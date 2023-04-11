@@ -10,7 +10,7 @@ const SingleItem = ({ job }) => {
             <div>
         <img className='h-20 w-32 p-2' src={logo} alt="" />
             </div>
-            <div className='space-y-3' >
+            <div className='space-y-3 py-3' >
                
                 <h2 className="card-title">
                     {jobTitle}

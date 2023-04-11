@@ -37,7 +37,8 @@ const assignments = [
 const Statistics = () => {
     return (
         <div >
-            <h1 className="font-bold text-3xl md:text-5xl my-A e text-center underline">Assignment Marks</h1>
+            
+            <h1 className="font-bold text-3xl md:text-5xl my-5 text-center underline">Assignment Marks</h1>
             <div style={{ width: '90%', margin: "50px auto", height: 280 }} >
                 <ResponsiveContainer>
                 <AreaChart
