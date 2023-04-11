@@ -6,7 +6,7 @@ import { Link, } from 'react-router-dom';
 const SingleItem = ({ job }) => {
     const { logo, id, jobTitle, Company, isFullTime, jobType, salary, address } = job;
     return (
-        <div className='flex gap-10 items-center bg-[#dddddd]/30 rounded-none border'>
+        <div className='md:flex gap-10 items-center bg-[#dddddd]/30 rounded-none border'>
             <div>
         <img className='h-20 w-32 p-2' src={logo} alt="" />
             </div>

@@ -19,7 +19,7 @@ const JobDetailsCard = ({ jobDetail }) => {
                 axis: 'x',
                 reverse: true
         }); }}
-            className="card w-96 bg-[#dddddd]/30 rounded-none border">
+            className="card md:w-96 bg-[#dddddd]/30 rounded-none border">
             <img className='p-1 h-16 w-32 ml-10 mt-5 rounded-lg' src={logo} alt="Shoes" />
             <div className="card-body ">
                 <h2 className="card-title">
@@ -40,7 +40,7 @@ const JobDetailsCard = ({ jobDetail }) => {
                     {" "}{address} <br /> <span>
                         <FontAwesomeIcon icon={faDollar} />
                         {" "} Salary: {salary.replace('per year', ' ')}</span></p>
-                <Link to={`/${id}`} state={id} >
+                <Link to={`/job/${id}`} state={id} >
                 <button className="my-btn w-3/4">View Details</button>
                </Link>
 

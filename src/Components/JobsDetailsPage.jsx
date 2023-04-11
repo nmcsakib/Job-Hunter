@@ -23,7 +23,7 @@ const JobsDetailsPage = () => {
         }
     }
     return (
-        <div className='grid grid-cols-6 gap-8 px-16 my-10'>
+        <div className='md:grid grid-cols-6 gap-8 px-16 my-10'>
             <div className='col-span-4 space-y-4'>
                <img className='w-32 h-16 rounded-md' src={logo} alt="" />
             <p className="font-bold">Job Description: <span className='font-normal'>{description}</span></p>
@@ -48,7 +48,7 @@ const JobsDetailsPage = () => {
                   
                 </div>
                 <div className="mt-5">
-      <button onClick={() => handelFunc(id)} className="my-btn w-full">Apply Now</button>
+      <button onClick={() => handelFunc(id)} className="my-btn w-1/2 md:w-full">Apply Now</button>
     </div>
             </div>
         </div>

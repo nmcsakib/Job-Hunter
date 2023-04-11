@@ -3,7 +3,11 @@ import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <div className="header font-manrope">
+        <div className="header font-manrope">
+          <div className='w-full h-full absolute top-0 -z-20 md:block hidden'>
+            <img className='absolute top-0 left-0' src="https://i.ibb.co/tQn2w1B/Vector.png" alt="" />
+            <img className='absolute top-0 right-0' src="https://i.ibb.co/KqFdn2R/Vector-1.png" alt="" />
+          </div>
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
