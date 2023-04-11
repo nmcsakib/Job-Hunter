@@ -14,7 +14,8 @@ const Header = () => {
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/'>Home</NavLink></li>
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/statistics'>Statistic</NavLink></li>
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/appliedJobs'>Applied Jobs</NavLink></li>
-      <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><a>Blogs</a></li>
+      <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/blogs'>Blogs</NavLink></li>
+      
     </ul>
       
     </div>
@@ -27,7 +28,8 @@ const Header = () => {
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/'>Home</NavLink></li>
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/statistics'>Statistic</NavLink></li>
       <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/appliedJobs'>Applied Jobs</NavLink></li>
-      <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><a>Blogs</a></li>
+      <li className='bg-gradient-to-r from-[#9873FF] to-[#7E90FE]  bg-clip-text text-transparent'><NavLink to='/blogs'>Blogs</NavLink></li>
+      
     </ul>
   </div>
   <div className="navbar-end">
