@@ -9,8 +9,6 @@ const JobCard = ({ job }) => {
             if (el) VanillaTilt.init(el, {
                 max: 25, 
                 speed: 400, 
-                glare: true, 
-                'max-glare': 0.5,
                 reset: true,
                 axis: 'x'
         }); }}

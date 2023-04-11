@@ -31,7 +31,7 @@ const Home = () => {
       
     return (
         <div className='font-manrope max-w-[1200px] mx-auto '>
-            <div className="banner px-10 mx-auto flex justify-between items-center my-10">
+            <div className="banner px-10 md:-mt-24 mx-auto md:flex justify-between items-center my-10">
                 <div className="flex flex-col gap-4">
                 <h1 className="font-bold text-7xl leading-tight">
                     One step <br /> closer to your <br /><span className='gradient-text' ref={el} ></span>
